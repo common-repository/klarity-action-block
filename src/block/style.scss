@@ -1,0 +1,165 @@
+.wp-block-klarity-klarity-action-list-block {
+  margin-top: 20px;
+  p {
+    margin: 0 10.5px 4px 10.5px;
+  }
+}
+
+.wp-block-klarity-klarity-action-block {
+  margin-bottom: 24px;
+  text-decoration: none !important;
+  background: $background !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media only screen and (max-width : 960px) {
+    margin-bottom: 12px;
+  }
+
+  * {
+    color: $text-color !important;
+  }
+
+  .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 120px;
+    box-shadow: 0 11px 20px rgba(0, 0, 0, 0.15);
+
+    @media only screen and (max-width : 600px) {
+      height: 140px;
+    }
+
+    .thumbnail, .text {
+      padding: 25px 1%;
+      height: 100%;
+    }
+
+    .thumbnail {
+      display: flex;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 80px;
+      width: 33%;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+
+      h2, .h2,
+      p, .p {
+        margin: 0;
+        text-align: left;
+      }
+
+      h2, .h2 {
+        &:before {
+          content: none;
+        }
+
+        font-family: Unna, sans-serif;
+        font-weight: bold;
+        line-height: 26px;
+        font-size: 20px;
+
+        @media only screen and (max-width : 600px) {
+          line-height: 30px;
+          font-size: 24px;
+        }
+      }
+
+      p, .p {
+        font-family: Lato, sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .most-valuable-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 5px;
+      left: -7px;
+      width: 180px;
+      height: 20px;
+      background: #E41414;
+      color: white;
+      font-weight: bold;
+      font-family: Lato, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 10px;
+      }
+
+      &:after {
+        position: absolute;
+        content: " ";
+        top: 20px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 7px 7px 0;
+        border-color: transparent black transparent transparent;
+      }
+    }
+  }
+}
+.wp-block-klarity-klarity-social-action-block {
+  a:last-child{
+    margin-bottom: 12px;
+  }
+  a {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    text-decoration: none !important;
+
+    .facebook {
+      background-color:#3A559F;
+    }
+    .twitter {
+      background-color:#38A1F3;
+    }
+    .whatsapp {
+      background-color:#1BD741;
+    }
+    div {
+      display: flex;
+      flex-direction:row;
+      height:39px;
+      margin-bottom: 12px;
+
+      box-shadow: 0 11px 20px rgba(0, 0, 0, 0.15);
+      img {
+         width:44px;
+         padding:10px;
+         background-color: rgba(0, 0, 0, 0.2);
+      }
+      p {
+        width:100%;
+        color:white;
+        text-decoration:none !important;
+        text-align: center;
+        margin:auto;
+        font-size:10px;
+        letter-spacing:0.2em;
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+      }
+    }
+  }
+}

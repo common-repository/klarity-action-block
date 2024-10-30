@@ -1,0 +1,40 @@
+.wp-block-klarity-klarity-action-block {
+  width: 100% !important;
+  float: none !important;
+
+  select, input[type="text"], textarea {
+    border: none !important;
+    &:hover {
+      outline: 1px solid lightgray;
+    }
+  }
+
+  select {
+    height: inherit;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  .content {
+    cursor: default !important;
+  }
+}
+
+.wp-block-klarity-klarity-action-block-form {
+  label {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    input[type="text"] {
+      width: 100vw;
+    }
+  }
+
+  .most-valuable-banner {
+    width: 240px !important;
+  }
+}
